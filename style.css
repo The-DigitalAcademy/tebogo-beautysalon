@@ -6,7 +6,7 @@
     font-family: "popper", sans-serif;
 }
 #banner{
-    background: linear-gradient(rgba(0,0,0,0,5), 27cbd2), url(Hair_img/banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0,5), 27cbd2), url(https://img.freepik.com/free-psd/top-view-beauty-salon-concept_23-2148600664.jpg?w=2000);
     background-size: cover;
     background-position: center;
     height: 100th;
@@ -62,7 +62,7 @@
 }
 #sideNav{
 width: 12px;
-height: 100vh;
+height: 100px;
 position: fixer;
 right: 0%;
 top: 0;
@@ -98,7 +98,7 @@ Nav ul li a{
 }
 
 /* Features Section Content*/
-#feature{
+#feature {
     width: 100%;
     padding: 70px 0;
 }
@@ -126,7 +126,7 @@ Nav ul li a{
     height: 35px;
     background: linear-gradient(#27cbd2, #fff);
     position: absolute;
-    top: 20px;
+    top: 3px;
     left: 0;
     z-index: -1;
     transform: rotate(10deg);
@@ -135,8 +135,34 @@ Nav ul li a{
 }
 
 .title-text{
-    font-size: 48px;
+    font-size: 42px;
+    
 }
+
+.feathure-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.feature{
+    flex-basis: 50%;
+}
+
+.feathure-img{
+    flex-basis: 50%;
+    margin: auto;
+
+}
+
+.feathure-img ing{
+    width: 70%;
+    border-radius: 10px;
+}
+
 
 @media screen and (max-width: 767px){
     .banner-text h1{
@@ -144,6 +170,6 @@ Nav ul li a{
     }
     .banner-btn a{
         display: black;
-        margin: 20px ;
+        margin: 20px auto;
     }
 }
