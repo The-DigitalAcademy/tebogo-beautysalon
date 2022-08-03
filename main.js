@@ -28,3 +28,16 @@ function colorLink(){
     }
 }
 linkColor.forEach(L => L.addEventListener('click', colorLink));
+
+// Change Header Background When Scroll Down
+
+function scrollHeader(){
+    const scrollHeader = document.getElementById('header')
+    if(this.scrollY >= 200){
+        scrollHeader.classList.add('scroll-header')
+    }
+    else{
+        scrollHeader.classList.remove('scroll-header')
+    }
+}
+windoow.addEventListener('scroll', scrollHeader);

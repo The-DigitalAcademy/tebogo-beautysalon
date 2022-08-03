@@ -110,8 +110,12 @@ body{
     right: 0;
     height: var(--header-height);
     background-color: rgba(255, 255, 255, 0.3);
-    z-index: 100;
+    z-index: 1000;
     transition: all 0.4s ease; 
+}
+.scroll-header{
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .navbar{
@@ -275,7 +279,7 @@ body{
 .services-content-description{
     padding: 20px;
 }
-s.ervices-content-description .box .inner img{
+.services-content-description .box .inner img{
     width: 90px;
     margin-bottom: 1rem;
 }
@@ -419,6 +423,55 @@ s.ervices-content-description .box .inner img{
 }
 /*Start Testimonoials Section*/
 
+.footer-list{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    padding: 7rem 0;
+    border-bottom: 1px solid var(--first-color);
+}
+.footer-data{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer-data-social{
+    margin-top: 1rem;
+}
+.footer-data-social i{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+}
+.footer-data h2{
+    font-weight: bold;
+    font-size: var(--h2-font-size);
+    line-height: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.footer-data p{
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.footer .copy{
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer .copy p{
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+.footer .copy span{
+    font-size: var(--small-font-size);
+    line-height: 1rem;
+}
+/*End Footer Section*/
+
 .tesimonials{
     padding: 7rem 0;
     background-color: var(--main-color);
@@ -472,7 +525,41 @@ position: relative;
 padding: 30px;
 z-index: 10;
 }
-/*End Gallery Section*/
+.tesimonials-name{
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+.tesimonials-name h1{
+    font-weight: 400;
+    font-size: var(--h2-font-size);
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.tesimonials-name{
+    color: var(--big-font-size);
+    font-size: var(--h3-font-size);
+}
+.tesimonials-description{
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+    /*End Service Section*/
+    /*Start Packgae Section*/
+.package{
+width: 100%;
+padding: 7rem 0;
+background-color: var(--main-color);
+border-radius: 0 300px;
+}
+.package-card{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5;
+}
+/*End Package Section*/
 
 @media (max-width: 920px) {
     .nav-menu{
@@ -526,51 +613,27 @@ z-index: 10;
     .services-content-description{
         grid-template-columns: repeat(2,1fr);
     }
+    .tesimonials-item:hover .tesimonials-img img{
+        transform: translateX(300px) rotate(360deg);
+    }
+}
+@media (max-width: 560px){
+    .services-content-description{
+        grid-template-columns: unset;
+    }
+.tesimonials-card{
+    width: 300px;
+    margin-top: 3rem;
+    grid-template-columns: unset;
+}
+.tesimonials-item:hover .tesimonials-img img{
+    transform: translateX(220px) rotate(360deg);
+}
+.footer-list{
+    grid-template-columns: unset;
 }
 
-/* start homne section */
-.home{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--main-color);
-    border-radius: 0 0 300px 0; 
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.home .home-img img{
-    max-width: 100%;
-    height: 100%;
-}
-
-.home .home-content{
-    width: 40%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.home-content h1{
-    font-family: var(--font-cursive);
-    font-size: 4rem;
-    line-height: 3.5rem;
-    letter-spacing: 4px;
-    color: var(--first-color);
-    margin-bottom: 1.5rem;
-}
-
-.home-content p{
-    font-weight: 400;
-    line-height: 1.5rem;
-    letter-spacing: 2px;
-    color: var(--black-clolr); 
-    margin-bottom: 1.5rem;
-}
 
