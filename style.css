@@ -249,7 +249,7 @@ body{
 .about-description p{
     font-weight: 400;
     line-height: 2rem;
-    color: var(--black-color);
+    color: var(--brown-color);
 }
 
 
@@ -389,6 +389,7 @@ body{
 .gallery{
     width: 100%;
     padding: 7rem 0;
+    object-fit: cover;
     position: relative;
 }
 .gallery::before{
@@ -408,15 +409,20 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     margin: 2.5rem auto;
+    object-fit: cover;
     position: relative;
 }
 .gallery-list-img{
     margin: 0.5rem;
+    object-fit: cover;
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0,2));
     
 }
 .gallery-img:hover img{
     transform: scale(1.1);
+    object-fit: cover;
+
+
 }
 .gallery-content button{
     margin: 0 auto;
