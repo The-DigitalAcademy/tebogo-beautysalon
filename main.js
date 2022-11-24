@@ -40,4 +40,4 @@ function scrollHeader(){
         scrollHeader.classList.remove('scroll-header')
     }
 }
-windoow.addEventListener('scroll', scrollHeader);
+window.addEventListener('scroll', scrollHeader);
